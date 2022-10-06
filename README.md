@@ -6,4 +6,4 @@ Trilha Especializar do Curso Discover da Rocketseat
 
 1.1. Javascript Assíncrono
 
-<p>.</p>
+<p>Introdução sobre callback, como utilizar promises e async/await.</p>

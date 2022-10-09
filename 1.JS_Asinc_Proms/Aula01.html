@@ -43,6 +43,60 @@
     <p>Vamos abordar nas próximas aulas o assunto promise.</p>
 
     <h2>O que é uma Promise</h2>
-    <p></p>
+    <p>
+      A promessa de que algo vai acontecer, ou será executada no caso. Exemplo
+      uma corrida do uber, quando pedimos ela fica pending, aceitando seria
+      fullfiled e rejeitada o status seria rejected e quando concluímos (com
+      sucesso ou não) ela seria settled. A Promise é um objeto JS de que algo
+      será realizado, é usado para operações assíncronas para não parar a
+      aplicação.
+    </p>
+
+    <h2>Promise no código</h2>
+    <p>
+      Montamos um modelo de promessa no arquivo promise.js com todos os outputs
+      possíveis. Notamos o assincronismo pois o aguardando é mostrado na tela
+      antes do resultado mesmo quando colocado no final. Podemos usar o conceito
+      de Promise por exemplo quando solicitamos uma lista de uma url que pode
+      demorar para carregar.
+    </p>
+
+    <h2>Utilizando o Codesandbox</h2>
+    <p>
+      Podemos usar o site Codesandbox selecionando o Vanilla para executar os
+      códigos do js.
+    </p>
+
+    <h2>Promises com Fetch</h2>
+    <p>
+      Usamos o Codesandbox para executar o código do arquivo promise02.js.
+      Podemos observar o efeito do encadeamento de promises simplificando o
+      código apenas com then. Usamos um único catch para a estrutura inteira da
+      promise.
+    </p>
+
+    <h2>Axios</h2>
+    <p>
+      Aprendendo a instalar o axios e usar o primeiro código dele no
+      Codesandbox.
+    </p>
+
+    <h2>Promises com axios</h2>
+    <p>
+      O axios é uma promessa quando usamos o método axios.get para buscar alguma
+      url. Podemos fazer novamente um encadeamento de promessas para buscar
+      informações via axios e adicionar arrow functions para simplificar ainda
+      mais o código. Usamos o Codesandbox com o axios instalado para rodar o
+      cógido promise03.js deste repositório.
+    </p>
+
+    <h2>Executando promessas em paralelo com Promise all</h2>
+    <p>
+      Podemos executar duas ou mais promessas ao tempo e depois exibir o
+      resultado final de todas via array Promise.all, que será um array composto
+      por promessas que retornará também um array com as respostas de cada
+      promessa. Usamos novamente o Codesandbox para executar o código do arquivo
+      promise04.js que criamos.
+    </p>
   </body>
 </html>

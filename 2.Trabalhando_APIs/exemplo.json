@@ -1,0 +1,18 @@
+{
+  "nome":"Caio Leme",
+  "cidade":"Sorocaba",
+  "telefone":998344567,
+  "livros_favoritos":[
+    "O Poder do Hábito",
+    "O Guia do Mochileiro das Galaxias",
+    "O Senhor dos Anéis",
+    "Sherlock Holmes"],
+  "hobbies":{
+    "semana":"filmes e séries",
+    "fim de semana":"trilha",
+    "outros":[
+      "academia",
+      "basquete"
+    ]
+  }
+}

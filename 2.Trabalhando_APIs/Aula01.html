@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Especializar 2.1 - APIs Início</title>
+  </head>
+  <body>
+    <h1>APIs Início</h1>
+
+    <h2>Introdução</h2>
+    <p>Será apresentado no curso o que é uma API e como trabalhar com ela.</p>
+
+    <h2>Por que apresender API?</h2>
+    <p>
+      APIs são aplicações que auxiliam na troca de informações entre sistemas.
+      Por exemplo realizar login com o google em outros sites, pagamento de
+      terceiros em um site de compras online, tudo isso é feito via API de forma
+      padronizada.
+    </p>
+
+    <h2>O que é API?</h2>
+    <p>
+      Exemplo de garçom (API) no restaurante, que leva os pedidos (requests) até
+      a cozinha (server ou back-end) e traz de volta a comida (dados) ao cliente
+      ou solicitante (front-end). O tratamento de dados é feito no back-end, a
+      API não tem ação sobre os dados, somente faz a ponte entre front e back
+      end. A troca de informações é feita em formato json, no caso a loja online
+      recebe os dados preenchidos no fronto, trata e repassa para o back-end do
+      sistema de pagamentos e esse devolve uma resposta na API informando se
+      está ok ou não, de forma que a loja reconhece o pagamento da compra.
+    </p>
+
+    <h2>JSON</h2>
+    <p>
+      Json é um formato de arquivo leve usado para troca de informações e dados
+      e pode ser usado em qualquer linguagem. Nós temos facilidade de ler o
+      arquivo e as aplicações podem utiliza-lo fácilmente também, pois é formado
+      por campos chave-valor. Criando um json básico no arquivo exemplo.json
+      salvo nesta pasta. Usado para o trânsito de informações nas APIs.
+    </p>
+
+    <h2>Métodos HTTP</h2>
+    <p>
+      GET - a API deve devolver alguma informação, é o padrão dos navegadores
+      para abrir um site. POST - usado para enviar dados para a API que podem
+      ser registradas/guardadas ou não. Por exemplo criar um novo repositório no
+      github, mas as informações são enviadas do front para o back do github e
+      depois para a API. DELETE - API recebe a informação de quais dados devem
+      ser apagados através do identificador. Por exemplo quando extraímos a
+      lista de usuários do github e queremos deletar algum. PUT - informa para a
+      API quais registros devem ser atualizados. PATCH - informa a API apenas 1
+      registro para ser atualizado.
+    </p>
+
+    <h2>Insomnia</h2>
+    <p>
+      Programa para conseguirmos fazer os outros tipos de requisições como post
+      e delete. Aprendendo o básico de como organiar as informações dentro do
+      programa, separando em pastas e arquivos de requests devidamente
+      identificados. Usamos como exemplo API de usuários do github, ele limita a
+      45 registros para não travar os programas.
+    </p>
+  </body>
+</html>

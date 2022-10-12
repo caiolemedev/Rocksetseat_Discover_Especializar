@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Especializar 2.3 - Parâmetros nas req</title>
+  </head>
+  <body>
+    <h1>Parâmetros nas requisições</h1>
+
+    <h2>O que são parâmetros nas requisições</h2>
+    <p>
+      Podemos programar nossa aplicação para receber parâmetros via url por
+      exemplo: localhost:3000/?name=caio , ou no próprio body da requisição,
+      como fizemos no método anterior via POST e PUT. Parâmetros são informações
+      que passamos para o back-end.
+    </p>
+
+    <h2>Body Params</h2>
+    <p>
+      Podemos enviar os parâmetros de forma escondida vida body da requisição
+      usando um arquivo json. Podemos receber o body via POST, PUT e PATCH. É
+      possível realizar o desmembramento do body em variáveis para podemos
+      trablhar com cada uma delas individualmente.
+    </p>
+
+    <h2>Route Params</h2>
+    <p>
+      Podemos usar também a própria rota para enviarmos informações. Dessa forma
+      na rota do servidor devemos criar a variável que desejamos usar e ela
+      receberá qualquer valor que for passado na rota.
+    </p>
+
+    <h2>Query Params</h2>
+    <p>
+      Além dos anteriores, é possível receber informações via query. Neste
+      modelo mantemos a rota inalterada e usamos o ? para idenficiar a variável
+      e o valor na url. Separamos as variáveis com &. Será recebido um arquivo
+      json com as informações e podemos acessar valores específicos adicionando
+      o parâmetro específico desejado. Exemplo:
+      localhost:3000/about/user?nome=caio&cidade=São Paulo&id=974328.
+    </p>
+  </body>
+</html>

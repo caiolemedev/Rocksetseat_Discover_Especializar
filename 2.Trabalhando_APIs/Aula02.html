@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Especializar 2.2 - API no Back-End</title>
+  </head>
+  <body>
+    <h1>API no Back-End</h1>
+
+    <h2>Iniciando projeto em NodeJS</h2>
+    <p>
+      Abrir o terminal que rodamos npm em node, criar a pasta do projeto (pasta
+      APIs deste repositório) e executar o npm init -y para iniciar o projeto de
+      node. Entrar no arquivo package.json retirar a linha teste e incluir o
+      autor.
+    </p>
+
+    <h2>Express</h2>
+    <p>
+      Baixar e instalar o framework Express para auxiliar na criação de APIs.
+      Usar o comando npm i express para que o terminal busque e instale o
+      framework. Os arquivos necessários serão baixados e configurados na pasta
+      do projeto.
+    </p>
+
+    <h2>Criando server</h2>
+    <p>
+      Criando o servidor localhost:3000 usando o express para o projeto APIs.
+      Quando rodamos o projeto via node index.js o browser consegue identificar
+      que existe alguma aplicação rodando, mas por hora exibe o erro "Cannot
+      GET". Caso a aplicação não esteja rodando no node o browser exibirá erro
+      de conexão recusada.
+    </p>
+
+    <h2>GET</h2>
+    <p>
+      Criamos uma rota para o navegador via aplicação route e get usando o
+      padrão de caminho, somente a barra, para exibirmos uma resposta inicial na
+      página. Fizemos um exemplo de uma página sobre com mais uma rota.
+    </p>
+
+    <h2>POST</h2>
+    <p>
+      Criamos uma rota na aplicação para usarmos o post e exibirmos a menssagem
+      do body da requisição mas o navegador não consegue executar esse método,
+      portanto utilizamos o Insomnia. Ao enviarmos um json na requisição
+      precisamos de um midware (utilizamos a função json dentro do próprio
+      express) para informar a aplicação que o arquivo recebido é um json.
+      Midware nada mais é que uma função ou aplicação que será executada antes
+      da parte interna do método POST, ou seja, antes da aplicação ler a
+      requisição. Podemos postar como resposta agora o própio body do request em
+      vez de simplesmente mostrarmos no terminal.
+    </p>
+
+    <h2>PUT</h2>
+    <p>
+      Criamos o método put para alterar uma variável do nossso código (author)
+      via requisição. Precisamos usar o midware para transformar todas as req e
+      res em json facilitando a comunicação. Podemos incluir uma rota get para
+      apresentar os valores da variável antes e depois do método put. Para
+      alterarmos a variável apenas com o valor em si e não com o json inteiro
+      acrescentamos uma identificação a mais .author no body da requisição. Além
+      disso, no próprio put podemos retornar a variável author para ser exibida.
+    </p>
+
+    <h2>DELETE</h2>
+    <p>
+      Para usarmos o DELETE precisamos passar um identificador do que será
+      deletado do código, esse identificador normalmente fica na própria url e
+      podemos capturar ele via req.params.identificador, e até mostrar como
+      resposta, como foi feito. Na aplicação precisaríamos adicionar um código
+      executando a deleção solicitada no caso.
+    </p>
+  </body>
+</html>

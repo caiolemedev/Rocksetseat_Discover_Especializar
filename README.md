@@ -16,4 +16,8 @@ Trilha Especializar do Curso Discover da Rocketseat
 
 2.2 API no Back-end
 
-<p>.</p>
+<p>Usando APIs no back-end via servidor do express e insomnia e criando os métodos mais tradicionais.</p>
+
+2.3 Parâmetros nas requisições
+
+<p>Como trabalhar com os diferentes métodos de recebimento de parâmetros.</p>

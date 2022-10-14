@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Especializar 2.4 - Consumindo APIs com NodeJS</title>
+  </head>
+  <body>
+    <h1>Consumindo APIs com NodeJS</h1>
+
+    <h2>API do github</h2>
+    <p>
+      Apresentando a api do github que possui biblioteca de emojis, usuários,
+      etc. Os dados de usuário apresentados são dados públicos, por exemplo
+      foto, nome, url do perfil, repositórios. Para usar dados não públicos
+      precisamos de uma autenticação do github, por exemplo para visualizar
+      repositórios privados ou realizar alguns outros verbos como POST, PATCH e
+      DELETE. Nesta aula vamos testar somente com os dados públicos. Usamos o
+      Insomnia para testar uma requisição GET de dados dos usuários.
+    </p>
+
+    <h2>Consumindo com Axios</h2>
+    <p>
+      Usando o módulo do axios podemos usar dentro dele o método get para
+      acessar uma api na internet, no caso, o github. Utilizamos o template
+      literals ou template string para transformar o retorno da url da imagem de
+      perfil na própria imagem via tag img. Observando no insomnia que nosso
+      servidor local que criamos pode consumir apis sem problemas.
+    </p>
+  </body>
+</html>

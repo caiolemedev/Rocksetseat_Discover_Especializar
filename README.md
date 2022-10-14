@@ -21,3 +21,7 @@ Trilha Especializar do Curso Discover da Rocketseat
 2.3 Parâmetros nas requisições
 
 <p>Como trabalhar com os diferentes métodos de recebimento de parâmetros.</p>
+
+2.4 Consimindo API com NodeJS
+
+<p>Apresentando a API do Github e consumindo a mesma via axios no servidor local.</p>

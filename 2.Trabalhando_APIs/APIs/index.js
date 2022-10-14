@@ -1,4 +1,5 @@
 const express = require('express') //chamando o módulo express
+const axios = require('axios') //chamando o módulo axios
 
 const app = express() //guardando o módulo inicializado do express na app
 
@@ -70,4 +71,14 @@ app.route('/identidade/:nome').get((req, res) => res.send(req.params.nome))
 //capturando informações via query que já cria as variáveis na req
 app.route('/').get((req, res) => res.send(req.query.nome))
 app.route('/about/user').get((req, res) => res.send(req.query))
+*/
+
+//Especializar 2.4 - Consumindo API com NodeJS
+/*
+app.route('/').get((req, res) => {
+  axios
+    .get('https://api.github.com/users/caiolemedev')
+    .then(result => res.send(`<img src="${result.data.avatar_url}"/>`))
+    .catch(error => console.log(error))
+})
 */

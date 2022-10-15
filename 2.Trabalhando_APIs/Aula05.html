@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Especializar 2.5 - API no Front-End com Fetch</title>
+  </head>
+  <body>
+    <h1>API no Front-End com Fetch</h1>
+
+    <h2>Conhecendo o fetch</h2>
+    <p>
+      Fetch é uma interface de JS para busar e permitir a utilização de uma url
+      da internet no seu código. Preparando para este módulo baixando o projeto
+      node-api-discover-main e rodando na máquina para validar se está tudo ok.
+    </p>
+
+    <h2>GET</h2>
+    <p>
+      Usando o Fetch na na aplicação que baixamos podemos jogar o resultado da
+      mesma em um html via JS, no caso ciamos o projeto Fetch_Discover_API para
+      trabalhar com o Front-End recebendo os dados da API do
+      node-api-discover-main. Usamos o comando JSON.stringfy para transformar o
+      conteúdo que recebido em string para ser apresentada no html.
+    </p>
+
+    <h2>GET com parâmetros</h2>
+    <p>
+      Usamos o template string no fetch para adicionar o id do objeto de retorno
+      da API e assim facilitar a manipulção dos seus dados. Com isso podemos
+      inserir os detalhes de name, city e até o avatar via id de tags html
+      atrivuindo a cada um o dado específico retornado da API. Para a tag img
+      usamos a url do avatar retornada na API como source exibindo a foto do
+      usuário.
+    </p>
+
+    <h2>POST</h2>
+    <p>
+      Para fazermos um POST através do fatch precisamos passar junto com a url
+      um objeto com alguns parâmetros, são eles o method (no caso POST), body
+      (aqui será o conteúdo que queremos adicionar, na aplicação é a constante
+      newUser passada convertida para texto JSON) e o headers (no caso o padrão
+      de app json e charset). Com isso podemos mostrar também o response da API
+      na aplicação, confirmando que o usuário foi adicionado. Podemos ainda usar
+      a função getUser criada para exibir os dados do novo usuário que
+      adicionamos.
+    </p>
+
+    <h2>PUT</h2>
+    <p>
+      Usamos o método PUT de forma muito similar ao POST acima, passando os
+      parâmetros do novo usuário via texto no body. Mas como usamos o method PUT
+      no request precisamos especificar uma id e esta será alterado, não será
+      criado nenhum novo usuário. Podemos deixar os ids das funções updateUser e
+      getUser dinâmicos passando o valor que desejamos editar e mostrar quando
+      chamamos a função.
+    </p>
+
+    <h2>DELETE</h2>
+    <p>
+      Para utilizarmos o DELETE na API precisamos somente passar o id que
+      queremos remover, não há necessidade de passar um body pois o id estará na
+      url do fetch, precisamos somente do method e do headers. E da mesma forma
+      que os anteriores podemos exibir o retorno do DELETE, ou seja, a
+      confirmação que a aplicação foi executada e usuário deletado com sucesso
+      em nosso front.
+    </p>
+  </body>
+</html>

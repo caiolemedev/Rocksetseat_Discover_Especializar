@@ -25,3 +25,7 @@ Trilha Especializar do Curso Discover da Rocketseat
 2.4 Consimindo API com NodeJS
 
 <p>Apresentando a API do Github e consumindo a mesma via axios no servidor local.</p>
+
+2.5 API no Front-End com Fetch
+
+<p>Consumindo uma API no front exibindo e manipulando os dados de usuários.</p>

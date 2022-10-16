@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Especializar 2.6 - API no Front-End com Axios</title>
+  </head>
+  <body>
+    <h1>API no Front-End com Axios</h1>
+
+    <h2>Conhecendo o Axios</h2>
+    <p>
+      Ferramenta para fazer requisições em APIs usando os verbos mais comuns.
+      Usamos o script via CDN para utilizar a ferramenta sem precisar instalar
+      nada via node.
+    </p>
+
+    <h2>Rodando API</h2>
+    <p>
+      Para o projeto usaremos o node-api-discover-main da mesma forma que
+      fizemos no projeto anterior. Então neste passo devemos baixar, instalar e
+      rodar o projeto na nossa máquina.
+    </p>
+
+    <h2>GET</h2>
+    <p>
+      Usamos o método get do Axios, similar ao Fetch feito anteriormente para
+      exibir a resposta da API. Para que seja exibido no front precisamos
+      transformar a resposta em texto simples usando JSON.stringfy().
+    </p>
+
+    <h2>POST</h2>
+    <p>
+      Usamos o método post do axios, que é muito similar ao fetch (mesma
+      estrutura). Usamos a mesma estrutura de objeto para um novo usuário e
+      depois passamos como parâmetro da função para ser adicionado à API.
+    </p>
+
+    <h2>GET com parâmetros</h2>
+    <p>
+      Usamos o método get com parâmetros de id sendo passados para a função, da
+      mesma forma que fizemos com o fetch. Podemos exibir cada dado do usuário
+      em uma tag html pelo id delas.
+    </p>
+
+    <h2>PUT</h2>
+    <p>
+      Assim como os anteriores, o put no axios funciona de forma muito similar
+      ao fetch, onde passamos o id e os dados de usuário que queremos alterar. A
+      construção do objeto e da função é exatamente a mesma, podemos alterar o
+      id da função getUser para mostrar o usuário que alteramos.
+    </p>
+
+    <h2>DELETE</h2>
+    <p>
+      De forma muito similar ao delete do fetch, passamos para a função o id do
+      usuário que queremos deletar e o mesmo será excluído da lista de usuários
+      da API. Podemos observar em tempo real a atualização no array impresso no
+      front com liveserver.
+    </p>
+  </body>
+</html>

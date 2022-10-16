@@ -29,3 +29,11 @@ Trilha Especializar do Curso Discover da Rocketseat
 2.5 API no Front-End com Fetch
 
 <p>Consumindo uma API no front exibindo e manipulando os dados de usuários.</p>
+
+2.6 API no Front-End com Axios
+
+<p>Esta maneira de consumir apis no front é muito similar ao fetch, usamos praticamente a mesma estrutura do módulo anterior.</p>
+
+2.7 Conclusão
+
+<p>Neste curso for apresentado o que é uma API, como construir e consumir uma além de mostrar seus dados no front.</p>

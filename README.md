@@ -37,3 +37,9 @@ Trilha Especializar do Curso Discover da Rocketseat
 2.7 Conclusão
 
 <p>Neste curso for apresentado o que é uma API, como construir e consumir uma além de mostrar seus dados no front.</p>
+
+**3. Fundamentos do ReactJS**
+
+3.1. Especializar React
+
+<p>.</p>

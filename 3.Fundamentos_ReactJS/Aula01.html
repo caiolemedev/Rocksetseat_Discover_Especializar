@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Especializar 3.1 - Especializar React JS</title>
+  </head>
+  <body>
+    <h1>Especializar React JS</h1>
+
+    <h2>Abertura</h2>
+    <p>Boas vindas as módulo de React!</p>
+
+    <h2>Introdução</h2>
+    <p>
+      Uma biblioteca JS para criar interfaces de usuário. É chamado de
+      biblioteca pois não tem uma opinião forte como um framework. Com ele
+      podemos criar interfaces para web, mobile ou até desktop.
+    </p>
+
+    <h2>Criando Projeto</h2>
+    <p>
+      Acessamos a pasta do projeto pelo terminal, podemos usar o create react
+      app ou vite. Usaremos o vite pois é muito mais performático e traz menos
+      arquivos, somente o necessário, tornando a instalação mais simples e
+      ocupando menos espaço. Rodamos o comando npm create vite@latest
+      nomeDoProjeto --template React no terminal dentro da pasta do projeto.
+    </p>
+
+    <h2>Executando Projeto</h2>
+    <p>
+      O vite não traz a pasta node modules necessários para rodar o projeto,
+      portanto precisamos entrar na pasta do projeto, reactapp e rodar o npm
+      install para que as dependências sejam instaladas. Podemos na sequência
+      rodar o projeto via npm run dev e a página será exibida em um localhost
+      padrão.
+    </p>
+
+    <h2>Estrutura React</h2>
+    <p>
+      Ao entrarmos no arquivo index.html criado pelo vite podemos ver que existe
+      apenas uma div root e um script rodando que vem da pasta src. Abrindo o
+      conteúdo do main.jsx podemos ver diversas importações no arquivo, como
+      ReactDOM, e renderiza na tela um componente de nome App dentro da div.
+      Para importar componentes no React não precisamos colocar extensão. Dentro
+      do arquivo App.jsx podemos encontrar todo o conteúdo renderizado.
+    </p>
+
+    <h2>JSX</h2>
+    <p>
+      O React utiliza a sintax chamada jsx, é uma maneira de escrever em React
+      para poder criar as interfaces de forma declarativa. Nada mais é que uma
+      função que retorna um html, mas é escrita em JS. Ele também permite
+      trabalhar com tags muito similares ao html.
+    </p>
+
+    <h2>Estrutura Pastas e Arquivos</h2>
+    <p>
+      Entendendo os arquivos e pastas. Começando pelo index.html que o arquivo
+      que inicializa o projeto, o package que organiza todas as dependências
+      necessárias para o projeto e gitignore que não irá para o github pois
+      podem ser baixadas facilmente pelo npm ou yarn. Pasta node_modules possui
+      todas as dependências necessárias para rodar o projeto, organizadas em sub
+      pastas. Pasta src terá os arquivos de renderização como o main.jsx que irá
+      renderizar o conteúdo e o App.jsx que retorna o conteúdo html do site, bem
+      como outros arquivos de suporte e CSS caso necessário. Aproveitamos para
+      organizar as páginas da aplicação dentro de uma pasta, remover arquivos
+      desnecessários e editar alguns caminhos.
+    </p>
+  </body>
+</html>

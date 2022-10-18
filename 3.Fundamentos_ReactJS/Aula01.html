@@ -68,5 +68,64 @@
       organizar as páginas da aplicação dentro de uma pasta, remover arquivos
       desnecessários e editar alguns caminhos.
     </p>
+
+    <h2>Fragment</h2>
+    <p>
+      No JSX devemos retornar apenas 1 elemento html, podemos fazer via fragment
+      que é basicamente um elemento nulo sem tag nenhuma. Ele é composto por uma
+      abertura e fechamento sem nome. Ou podmeos usar uma div que da na mesma.
+    </p>
+
+    <h2>Importando arquivos via CSS</h2>
+    <p>
+      Para fazer a importação do CSS no React criamos os arquivos que vamos usar
+      na pasta style e para utiliza-los na nossa aplicação usamos import e o
+      caminho do arquivo.
+    </p>
+
+    <h2>Separando CSS</h2>
+    <p>
+      Utilizando a estrutura de pastas podemos separar cada uma das páginas da
+      nossa aplicação e seu estilo, criando uma pasta por página contendo o
+      arquivo index.jsx e o arquivo style.css. Não há necessidade de atualizar o
+      nome da importação no main.jsx somente o caminho pois ele já irá procurar
+      o arquivo padrão index. Assim realizamos a importação do estilo direto no
+      index e refatoramos o código para que o export esteja antes do function.
+    </p>
+
+    <h2>Estilizando Página CSS</h2>
+    <p>
+      Para estilizar a página começamos colocando uma classe na div via
+      className (parâmetros do react). Na sequência configuramos o CSS
+      normalmente como um arquivo normal, ajustando a div e seus componentes com
+      as características que desejamos.
+    </p>
+
+    <h2>Importando Fonte</h2>
+    <p>
+      Para importar fontes usamos o index html do site adicionando o link das
+      fontes do google e no CSS global podemos utilizar a fonte importada para
+      padronizar os textos da nossa página.
+    </p>
+
+    <h2>Componentes</h2>
+    <p>
+      O React é baseado em componentes para facilizar a replicação e
+      reutilização de códigos. Criamos uma pasta separada chamada components que
+      terá a mesma organização da pasta pages para os componentes. Criamos um
+      componente card que foi importado para a página home e usado no formato de
+      componente do React. Além disso podemos estilizar rapidamente o componente
+      via CSS.
+    </p>
+
+    <h2>Propriedades</h2>
+    <p>
+      Para alterar as propriedades dos componentes precisamos primeiro passa-las
+      no arquivo onde chamamos os componentes, texto passamos com aspas e número
+      passamos com chaves. Para utiliza-las no component usamos o parâmetro
+      props e acessamos cada uma das propriedades que setamos na chamada.
+      Podemos simplificar a chamada do parâmetro props no componente usando
+      chaves.
+    </p>
   </body>
 </html>

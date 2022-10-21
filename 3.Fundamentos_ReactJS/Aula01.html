@@ -151,24 +151,56 @@
     </p>
 
     <h2>Key Prop</h2>
-    <p></p>
+    <p>
+      Warning de key prop no console para que cada elemento da lista tenha uma
+      propriedade única. Isso torna a aplicação no react mais performática em
+      comando de looping, delete e outros. No exemplo usamos o time pois é mais
+      específico que o name, mas o ideal é usar o id.
+    </p>
 
     <h2>Hooks</h2>
-    <p></p>
+    <p>
+      o useState é um Hook, temos também o useEffect e os demais seguem esse
+      padrão. O Hook nada mais é que uma função que permite conectar os recursos
+      de estado e ciclo de vida do react a partir dos componentes funcionais
+      (tudo baseado em função, paradigma funcional). Com isso os componentes e
+      atualizações ficam mais independentes.
+    </p>
 
     <h2>Header</h2>
-    <p></p>
+    <p>
+      Preparação de um cabeçalho para a lista de presença com a inclusão do nome
+      do responsável e imagem do github ao lado do h1.
+    </p>
 
     <h2>useEffect</h2>
-    <p></p>
+    <p>
+      Ele é executado automaticamente assim que a aplicação ou a interface é
+      renderiza. A estrutura dele é feita por uma arrow funcion para o corpo que
+      listará as ações a serem executadas e um array de dependências (estados
+      que o useEffect depende). Se o array estiver vazio ele será executado uma
+      vez só quando a interface é renderizada, mas se colocarmos um ou mais
+      estados toda vez que eles forem atualizados o useEffect será executado.
+    </p>
 
     <h2>Consumindo API</h2>
-    <p></p>
+    <p>
+      Podemos usar o useEffect para consumir dados numa API. No caso, consumimos
+      a API do github para tornar o nome e imagem do usuário dinâmicos.
+      Futuramente podemos usar os métodos HTML para pegar o nome do usuário e
+      alterar na url da API do fetch dentro do useEffect.
+    </p>
 
     <h2>useEffect Async</h2>
-    <p></p>
+    <p>
+      O useEffect não aceita o async anteriormente ao nome, para usarmos async e
+      await criamos uma função dentro do useEffect que ira ser async e captura
+      os dados e depois usamos o setUser e chamamos a função no final. Podemos
+      deixar a função dentro ou fora, dentro é mais organizado se for usada
+      especificamente para o useEffect.
+    </p>
 
     <h2>Encerramento</h2>
-    <p></p>
+    <p>Chegou ao final, parabéns!</p>
   </body>
 </html>

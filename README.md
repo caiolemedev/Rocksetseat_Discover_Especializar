@@ -42,4 +42,4 @@ Trilha Especializar do Curso Discover da Rocketseat
 
 3.1. Especializar React
 
-<p>A.</p>
+<p>Criando um projeto de lista de presenção com consumo de API usando React.</p>

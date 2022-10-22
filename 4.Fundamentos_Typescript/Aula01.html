@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Especializar 4.1 - Especializar Typescript</title>
+  </head>
+  <body>
+    <h1>Especializar Typescript</h1>
+
+    <h2>Abertura</h2>
+    <p>Ajudar na produtividade e tornar o código mais consistente</p>
+
+    <h2>O que é o Typescript</h2>
+    <p>
+      Foi criado para trazer um superset de tipagens para o JS. O JS não é uma
+      linguagem fortemente tipada, portanto alguns erros podem passar durante o
+      desenvolvimento da aplicação. O Typescript limita este tipo de erro ao
+      desenvolvimento e mantém a consistência da aplicação. Melhora o
+      desenvolvimento em times compartilhando funções e melhorando a
+      produtividade. No final, será tudo transferido e compilado do Typescript
+      para JS.
+    </p>
+
+    <h2>Por que utilizar Typescript?</h2>
+    <p>
+      Quando passamos números como texto para operações matemáticas o JS irá
+      concatenar os valores, como se fossem texto, assim o resultado de uma soma
+      onde um dos itens é texto seria um valor errado. Exemplo: 1+2 seria 12.
+      Podemos também errar dividindo um número por um array. Podemos errar
+      também tentando acessar parâmetros ou funções que não existem em um tipo
+      de variável específico.
+    </p>
+
+    <h2>Typescript Playground</h2>
+    <p>
+      No site oficial do Typescript podemos acessar o Playground para treinarmos
+      a utilização do mesmo e aprendermos um pouco. Nele podemos rodar a
+      aplicação ou ver o código TS sendo traduzido para JS.
+    </p>
+
+    <h2>Verificação tipo estático</h2>
+    <p>
+      O TS é um verificador de tipo estático, ou seja, verifica as expectativas
+      da função e variáveis antes de executar o programa. Fizemos alguns testes
+      tentando executar funções, acessar propriedades e funções inexistentes e
+      passar parâmetros do tipo errado para a função.
+    </p>
+
+    <h2>Compilação</h2>
+    <p>
+      Todo código TS irá se tornar JS após ser compilado. Criamos uma função
+      simples e executamos para verificar o resultado, quando acessamos o código
+      JS podemos notar que a tipagem nos parâmetros da função foram removidos na
+      compilação. Podemos usar a combinação de tipagem com verificação de nulos
+      no TS de forma simples, mas o código gerado no JS é totalmente diferente.
+    </p>
+
+    <h2>Tipagem Explícita</h2>
+    <p>
+      Como o TS é uma linguagem com tipagem explícita no próprio desenvolvimento
+      podemos verificar o tipo e qual variável estamos preenchendo ao
+      executarmos uma função.
+    </p>
+
+    <h2>Any</h2>
+    <p>
+      Podemos tipar uma variável como any para não deixar a declaração explícita
+      podendo assim colocar qualquer valor dentro da variável, como texto,
+      number, array, boolean, etc. Da mesma forma na função podemos usar any
+      para tipar um parâmetro, mas o TS já avisa que o uso do any é perigoso.
+      Devemos ter muito cuidado com o uso para não termos erros que teríamos no
+      JS, perdemos a essência do TS quando usamos any.
+    </p>
+  </body>
+</html>

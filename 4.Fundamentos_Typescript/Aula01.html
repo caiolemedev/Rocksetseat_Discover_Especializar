@@ -73,5 +73,121 @@
       Devemos ter muito cuidado com o uso para não termos erros que teríamos no
       JS, perdemos a essência do TS quando usamos any.
     </p>
+
+    <h2>Interferêcia de tipos</h2>
+    <p>
+      Usamos o dois pontos após o nome da variável para indicar qual tipo de
+      dado deverá ser inserido nela. A inferência de tipo é quando o TS
+      identifica o tipo de dado que colocamos na veriável e atribui um tipo a
+      variável (declaração implícita), o tipo é inferido pelo TS.
+    </p>
+
+    <h2>Tipos Primitivos</h2>
+    <p>No TS podemos usar os tipos primitivos como boolean, number e string.</p>
+
+    <h2>Matrizes</h2>
+    <p>
+      Podemos também definir tipagem para vetores ou matrizes, normalmemnte
+      usarmos as chaves após o tipo para indicar que estamos tipando uma
+      variável que será um array. Exemplo: let numbers: number[].
+    </p>
+
+    <h2>Funções</h2>
+    <p>
+      Se uma função não tem retorno o TS vai identifica-la como void, podemos
+      também declarar explicitamente e caso colocarmos um retorno nela o TS irá
+      apontar um erro. Se declararmos o tipo de retorno explicitamente o TS
+      também irá identificar caso o retorno em si não seja compatível. Colocamos
+      a tipagem explícita da função após seus parâmetros e antes do conteúdo,
+      ex: function showMessage(message: string): string { return message; }
+    </p>
+
+    <h2>Union</h2>
+    <p>
+      O operador Union permite que a variável aceite um tipo OU o outro tipo no
+      seu impout, para isso usamos o pipe entre os tipos da variável. Exemplo:
+      function printUserId(id: number | string) {}.
+    </p>
+
+    <h2>Generics</h2>
+    <p>
+      É utilizado de forma similar ao Union, para deixar a tipagem mais
+      flexível. Ele permite deixar a tipagem aberta até o momento da declaração
+      e a partir daquele momento ele só irá aceitar aquele tipo de valor na
+      variável. Normalmente usamos S para state, T para type, K para key, V para
+      value e E para element. Na execução da função usamos o identificador de
+      tipo e podemos também na declaração dela podemos extender (extends) para
+      outros tipos, ele seguirá dando alerta. Exemplo que será colocado entre os
+      sinais de maior e menor: T extends string | number = string.
+    </p>
+
+    <h2>Type</h2>
+    <p>
+      Até aqui declaramos os tipos direto na variável, mas podemos criar um tipo
+      usando a declaração type e atribuir quais tipos desejamos usar para
+      utilizar depois. Sempre criamos tipos iniciando com letra maiúscula.
+      Exemplo: type IdType = string |number|undefined.
+    </p>
+
+    <h2>Type Assertions</h2>
+    <p>
+      Usamos quando o TS não sabe exatamente qual tipo de dados estamos usando
+      mas podemos colocar de maneira forçada ou conversão qual o tipo do dado.
+      Usamos normalmente quando tratamos com APIs e o TS não sabe qual dado
+      estamos recebendo. Podemos fazer com objeto colocando o tipo de cada
+      propriedade do mesmo.
+    </p>
+
+    <h2>Objetos</h2>
+    <p>
+      Podemos criar tipagem para objetos informando qual o tipo de cada
+      propriedade do mesmo, listando quando declaramos o type. Posteriormente
+      podemos utilizar como desejarmos no código e o TS irá nos auxiliar no
+      preenchimento das informações bem como identificando erros de tipos.
+    </p>
+
+    <h2>Opcional</h2>
+    <p>
+      Dentro do objeto podemos colocar uma propriedade como opcional, basta
+      colocarmos uma interrogação antes dos dois pontos no type.
+    </p>
+
+    <h2>Intersecção de Tipos</h2>
+    <p>
+      Podemos juntar dois tipos via comando e comercial, dessa forma: type =
+      PlayerInfo = User & Char. Assim quando colocarmos o tipo da variável como
+      PlayerInfo o TS irá solicitar o preenchimento de todas as informações de
+      User e Char também.
+    </p>
+
+    <h2>Interface</h2>
+    <p></p>
+
+    <h2>Type e Interface</h2>
+    <p></p>
+
+    <h2>tsconfig</h2>
+    <p></p>
+
+    <h2>Aplicando TypeScript</h2>
+    <p></p>
+
+    <h2>Projeto</h2>
+    <p></p>
+
+    <h2>Adicionando TypeScript</h2>
+    <p></p>
+
+    <h2>Tipando Componente</h2>
+    <p></p>
+
+    <h2>Tipando Estados</h2>
+    <p></p>
+
+    <h2>Tipando Resposta da API</h2>
+    <p></p>
+
+    <h2>Encerramento</h2>
+    <p></p>
   </body>
 </html>

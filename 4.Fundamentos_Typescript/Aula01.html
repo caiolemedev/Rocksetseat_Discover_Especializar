@@ -184,24 +184,58 @@
     </p>
 
     <h2>Aplicando TypeScript</h2>
-    <p>Agora iremos aplicar o TS em um projeto.</p>
+    <p>Agora iremos aplicar o TS no projeto do módulo anterior, número 3.</p>
 
     <h2>Projeto</h2>
-    <p></p>
+    <p>
+      Podemos fazer o download no github, mas como criei no módulo anterior,
+      irei utilizar o meu próprio. Abrimos e iniciamos o projeto com o npm run
+      dev.
+    </p>
 
     <h2>Adicionando TypeScript</h2>
-    <p></p>
+    <p>
+      Instalamos o typescript no projeto via npm install typescript --save-dev,
+      criamos o arquivo tsconfig.json e depois adicionamos as propriedades
+      padrões dentro do typescript (na dúvida consultar a documentação).
+    </p>
 
     <h2>Tipando Componente</h2>
-    <p></p>
+    <p>
+      Alteramos o nome do arquivo do componente Card de jsx para tsx para que o
+      VS code identifique que se trata de um arquivo em typescript e não
+      javascript. Após isso inserimos os tipos do card. Se necessário, instalar
+      os tipos do TS para React usando npm i --save-dev @types/react.
+    </p>
 
     <h2>Tipando Estados</h2>
-    <p></p>
+    <p>
+      No caso dos estamos, precisamos tipar o estado students que é o vetor que
+      irá armazenar os valores de name e time dos cards. Para isso podemos
+      exportar o type do card e importamos este tipo no index da home. Para
+      informar no estado que estamos configurando o tipo em um vetor inserimos o
+      seguinte texto após a função entre os sinais de maior e menor
+      "Cardprops[]", abrindo e fechando chaves para indicar que se trata de um
+      vetor.
+    </p>
 
     <h2>Tipando Resposta da API</h2>
-    <p></p>
+    <p>
+      O TS não nos força a tipar tudo, mas podemos adicionar tipos numa resposta
+      de API por exemplo. No caso, tipamos o retorno da API do github que
+      estamos usando, tipando apenas para as propriedades que estamos usando
+      adicionando "as ProfileResponse" ao final da linha do data. Adicionalmente
+      podemos tipar nosso estado user para simplificarmos sua linha (para quando
+      usarmos muitas propriedades) criando um tipo e com a adição do tipo de
+      forma similar ao estado anterior mas agora tipando também o objeto dentro
+      da função use state (verificar detalhes no arquivo index.tsx da página
+      Home).
+    </p>
 
     <h2>Encerramento</h2>
-    <p></p>
+    <p>
+      Fim das alterações do projeto, alteramos somente os tipos de card e home.
+      Podemos aplicar o TS de forma gradativa em um projeto.
+    </p>
   </body>
 </html>

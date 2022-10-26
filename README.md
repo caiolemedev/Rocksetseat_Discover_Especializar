@@ -48,4 +48,4 @@ Trilha Especializar do Curso Discover da Rocketseat
 
 3.1. Especializar Typescript
 
-<p>.</p>
+<p>Aprendendo o básico de TS e como utiliza-lo para otimizar projetos.</p>

@@ -49,3 +49,9 @@ Trilha Especializar do Curso Discover da Rocketseat
 3.1. Especializar Typescript
 
 <p>Aprendendo o básico de TS e como utiliza-lo para otimizar projetos.</p>
+
+**4. Github para times**
+
+4.1. Github para times
+
+<p>Como usar o github em repositórios de projetos com mais de 1 colaborador.</p>

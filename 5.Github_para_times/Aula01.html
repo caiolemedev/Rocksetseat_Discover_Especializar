@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Especializar 5.1 - Github para times</title>
+  </head>
+  <body>
+    <h1>Github para times</h1>
+
+    <h2>O que é o Github para times?</h2>
+    <p>Podemos usar o Github para nos auxiliar no trabalho em time.</p>
+
+    <h2>Criando um repositório</h2>
+    <p>
+      Criando um repositório teste podemos em confgurações adicionarmos os
+      colaboradores do projeto e eles terão acesso ao mesmo repositório. Criamos
+      um arquivo index.html e colocamos algumas informações básicas para termos
+      um conteúdo no mesmo.
+    </p>
+
+    <h2>Branches</h2>
+    <p>
+      Na sequência, clonamos o repositório para o repositório local e abrimos o
+      VS code local para editar os arquivos. Podemos editar o projeto em nossa
+      branch main e alterarmos o projeto atual (podemos verificar no terminal ou
+      no github desktop). Podemos usar o comando git checkout -b
+      nomeDaNovaBranch e será criada a nova branch e irá nos posicionar nelas,
+      para trocar depois de criada não precisamos do -b. Criamos mais um arquivo
+      e realizamos algumas alterações na aplicação fazendo um commit na
+      sequência. O log de commits é apresentado por branch, o que não estiver na
+      main não aparece. No github podemos selecionar qual branch gostaríamos de
+      trabalhar. Podemos usar branchs alternativas quando a main está no github
+      pages e não queremos quebrar a página.
+    </p>
+
+    <h2>Merge</h2>
+    <p>
+      Para colocarmos o conteúdo de uma branch na main, colocamos o terminal
+      dentro da main e usamos o comando git merge
+      NomeDaBranchQueQueremosInserir. Assim todas as alterações da branch
+      alteranativa serão inseridas na main. A branch não deixa de existir,
+      permanece no mesmo status que deixamos.
+    </p>
+
+    <h2>Apagar uma branch</h2>
+    <p>
+      Quando não precisamos mais de uma branch e queremos apagar seu conteúdo,
+      usamos o comando git brach -D branchASerApagada. Não podemos estar dentro
+      da branch para apaga-la. A branch permanece no github e podemos deletar
+      diretamente no site ou usando o comando git push origin --delete
+      branchASerApagada no terminal.
+    </p>
+
+    <h2>Atualizando branchs</h2>
+    <p>
+      Quando temos a criação de outras branchs que não em nossa máquina local
+      mas estão no github já podemos atualizar o status usando o comando git
+      fetch no terminal ele atualizará na máquina local, mas ele não mostra na
+      lista de branchs. Somente após fazermos um checkout para a branch
+      atualizada é que a branch irá aparecer em nosso terminal. Se deletarmos a
+      branch no github podemos usar o comando git fetch -p para atualizar com a
+      deleções feitas no repositório, mas ainda precisamos usar o git branch -D
+      branchASerApagada para deletar os arquivos também da nossa máquina.
+    </p>
+
+    <h2>Configuração de branch padrão e proteção da main</h2>
+    <p></p>
+
+    <h2>Pull Request</h2>
+    <p></p>
+
+    <h2>Resolvendo conflito</h2>
+    <p></p>
+
+    <h2>Criando pull request</h2>
+    <p></p>
+
+    <h2>Colaborando em projetos públicos</h2>
+    <p></p>
+
+    <h2>Issues</h2>
+    <p></p>
+
+    <h2>Projects</h2>
+    <p></p>
+  </body>
+</html>

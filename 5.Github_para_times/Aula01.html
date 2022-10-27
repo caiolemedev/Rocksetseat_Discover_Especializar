@@ -66,24 +66,90 @@
     </p>
 
     <h2>Configuração de branch padrão e proteção da main</h2>
-    <p></p>
+    <p>
+      Quando trabalhamos em time podemos ter várias branchs e push podem
+      acontecer sem querer e alterar a main. No github conseguimos proteger a
+      main no setting via branch protection rules, podemos marcar que precisamos
+      de um pull request para um merge com aprovação. Adicionamos também que o
+      dono do projeto precisa avaliar antes de ocorrer o merge e que as branchs
+      podem ser excluídas depois do merge. Existem outras configurações, mas não
+      são tão usadas.
+    </p>
 
     <h2>Pull Request</h2>
-    <p></p>
+    <p>
+      Na aba superior do github podemos abrir os detalhes de cada um dos pull
+      requests. Podemos ver quantos commits e de qual branch está vindo o
+      request, bem como os detalhes de cada commit nos detalhes linha a linha.
+      Na aba file changes podemos ver todas as alterações do merge, sem divisão
+      por commit, ou seja, de toda a alteração. Podemos adicionar comentários na
+      linha a ser alterada quando fazemos o review e ao finalizarmos a revisão
+      podemos solicitar alterações para a pessoa que submeteu o request. Após o
+      novo pull request o comentário anterior fica com flag outdated e todas as
+      aprovações são necessárias novamente. Nesta segunda avaliação é melhor
+      utilizar a avaliação por commit. Após as aprovações o github autoriza o
+      botão de merge.
+    </p>
 
     <h2>Resolvendo conflito</h2>
-    <p></p>
+    <p>
+      Quando recebemos o código do github via pull no terminal podemos ter
+      conflitou ou quando alguém alterou alguma linha ao mesmo tempo. Para
+      resolver, podemos apagar as linhas erradas e os códigos do commit que o
+      github coloca e pronto, o conflito está resolvido. Mas não podemos apenas
+      fazer um commit na main após isso, precismos criar uma nova branch para
+      depois fazer o merge.
+    </p>
 
     <h2>Criando pull request</h2>
-    <p></p>
+    <p>
+      Com a branch criada acima podemos criar um pull request via git push
+      origin NomeDaBranchQueQueremosInserir e então no site do github acessamos
+      um novo pull request e inserimos qual a branch que queremos fazer o merge.
+      O github avalia e bloqueia o merge, mesmo após aprovações, de um pull
+      request com conflitos. Adicionamos um comentário com os detalhes e os
+      reviewrs. Podemos adicionar 1 ou mais responsáveis pelo pull request e
+      colocar labels. Podemos filtrar os pull requests por pessoas ou labels.
+      Após alterar o código depois da revisão precisamos solicitar novamente a
+      aprovação, somente o commit não envia automaticamente uma solicitação de
+      aprovação. Na página do pull request podemos restaurar banchs que já
+      excluímos.
+    </p>
 
     <h2>Colaborando em projetos públicos</h2>
-    <p></p>
+    <p>
+      Podemos alterar repositórios públicos via pull requests. Não conseguimos
+      alterar diretamente, podemos clonar mas no caso, criamos um fork que é uma
+      cópia para o nosso github criando um novo repositório antes e depois
+      clonamos em nossa máquina local. Fazemos as alterações que desejamos e
+      adicionamos um commit ao nosso repositório do fork (branch que criamos) e
+      na sequência criamos um pull request para o projeto original. Podemos
+      criar o pull request no repositório original mas precisamos comparar com
+      repositórios com fork (botão azulzinho). A única pessoa que pode aprovar o
+      pull request e realizar o merge é o dono do projeto neste caso. Podemos
+      contribuir somente com reviews em outros repositórios também.
+    </p>
 
     <h2>Issues</h2>
-    <p></p>
+    <p>
+      Issues são pendências que ainda não foram resolvidas ou revisões que não
+      iniciam com pull request. Podemos colocar labels, responsáveis e
+      comentários normalmente, por exemplo a tag good first issue é uma label
+      para melhorias simples no projeto. Após o pull request para resosuloção da
+      issue podemos linkar os dois temas e quando aprovamos e fazemos o merge
+      podemos finalizar a issue (manualmente).
+    </p>
 
     <h2>Projects</h2>
-    <p></p>
+    <p>
+      Para criarmos um projeto dentro do github entramos no repositório e
+      criamos um novo ou adicionamos o repositório em um já existente. No
+      projeto podemos criar as tarefas e quando convertemos elas para issues
+      precisamos linkar um projeto para dar sequência. O github projects utiliza
+      a metodologia do Kanban para manter o tracking das atividades, e caso
+      fecharmos a issue dentro do repositório a tarefa no kanban já migra para o
+      status done. Podemos usar o kanban como um atalho para a discussão da
+      issue. Além de issues podemos linkar as tarefas com PR também
+    </p>
   </body>
 </html>

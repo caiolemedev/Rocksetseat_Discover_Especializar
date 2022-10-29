@@ -44,14 +44,20 @@ Trilha Especializar do Curso Discover da Rocketseat
 
 <p>Criando um projeto de lista de presenção com consumo de API usando React.</p>
 
-**3. Fundamentos do Typescript**
+**4. Fundamentos do Typescript**
 
-3.1. Especializar Typescript
+4.1. Especializar Typescript
 
 <p>Aprendendo o básico de TS e como utiliza-lo para otimizar projetos.</p>
 
-**4. Github para times**
+**5. Github para times**
 
-4.1. Github para times
+5.1. Github para times
 
 <p>Como usar o github em repositórios de projetos com mais de 1 colaborador.</p>
+
+**6. Transition and Animation**
+
+6.1. Transition and Animation
+
+<p>.</p>

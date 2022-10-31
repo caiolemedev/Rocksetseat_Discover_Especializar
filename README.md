@@ -60,4 +60,4 @@ Trilha Especializar do Curso Discover da Rocketseat
 
 6.1. Transition and Animation
 
-<p>.</p>
+<p>Aprendendo o básico sobre CSS transition e animation com objetos simples.</p>

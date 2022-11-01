@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Especializar 6.3 - SQL Avançado</title>
+  </head>
+  <body>
+    <h1>Especializar 6.3 - SQL Avançado - Tipos de campos</h1>
+
+    <h2>Foreign key</h2>
+    <p>
+      Essa chave é quem faz a relação de uma tabela com a outra, por exemplo
+      quando queremos relacionar o perfil de usuário com o post, então colocamos
+      um campo adicional dentro da tabela do post. Assim, podemos limpar a
+      tabela excluindo o nome de usuário. Quando usamos a chave para identificar
+      um elemento numa tabela, é chamada primary key, e ao utilizarmos ela em
+      outra tabela para fazermos referência as informações da tabela anterior
+      ela é chamada foreign key. A primary key da tabela, não pode se repetir,
+      já a foreign key pode.
+    </p>
+
+    <h2>Unique</h2>
+    <p>
+      Quando colocamos campos Unique banco de dados não permite que o valor de
+      texto ou número seja repetido.
+    </p>
+
+    <h2>Exemplo escola</h2>
+    <p>
+      Adicionamos a características UNIQUE nos CPFs das duas tabelas, para que
+      os valores não se repitam. Portanto a descrição será cpf: NUMBER UNIQUE.
+      Na tabela de relação aluno-professor os dois dados terão a descrição id:
+      NUMBER FOREIGN KEY(pofessor ou aluno).
+    </p>
+  </body>
+</html>

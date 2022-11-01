@@ -61,3 +61,33 @@ Trilha Especializar do Curso Discover da Rocketseat
 6.1. Transition and Animation
 
 <p>Aprendendo o básico sobre CSS transition e animation com objetos simples.</p>
+
+**7. SQL Avançado**
+
+7.1. Introdução
+
+<p>Aprenderemos alguns comando de join e outros avançados.</p>
+
+7.2. Conceitos
+
+<p>Como relacionar duas tabelas via uma terceira.</p>
+
+7.3. Tipos de campos
+
+<p>O conceito de foreign key e campos unique nas tabelas.</p>
+
+7.4. Iniciando o banco de dados
+
+<p>.</p>
+
+7.5. Unindo tabelas
+
+<p>.</p>
+
+7.6. Comandos avançados
+
+<p>.</p>
+
+7.7. Comandos nas tabelas
+
+<p>.</p>

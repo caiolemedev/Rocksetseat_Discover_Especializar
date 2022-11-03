@@ -78,16 +78,16 @@ Trilha Especializar do Curso Discover da Rocketseat
 
 7.4. Iniciando o banco de dados
 
-<p>.</p>
+<p>Instalando o Beekeeper e abrindo o primeiro banco de dados.</p>
 
 7.5. Unindo tabelas
 
-<p>.</p>
+<p>Usando o comando JOIN e suas variáveis para juntarmos informações de duas tabelas.</p>
 
 7.6. Comandos avançados
 
-<p>.</p>
+<p>Alguns comandos mais avanaçados do SQL para adicionar filtros por exemplo.</p>
 
 7.7. Comandos nas tabelas
 
-<p>.</p>
+<p>Entendendo comandos de criação, alteração e deleção de tabelas.</p>

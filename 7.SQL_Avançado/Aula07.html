@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Especializar 7.7 - SQL Avançado</title>
+  </head>
+  <body>
+    <h1>Especializar 7.7 - SQL Avançado - Comando nas Tabelas</h1>
+
+    <h2>CREATE TABLE</h2>
+    <p>
+      Para criarmos um banco de dados primeiro criamos um arquivo escola.sqlite
+      e abrimos no Beekeeper. Iniciamos com o comando a seguir para criar a
+      primeira tabela com os campos configurados conforme descrição. Usamos o
+      campo AUTOINCREMENT para garantir que o campo seja único e seja criado
+      automaticamente quando adicionarmos um novo aluno. Exemplo: CREATE TABLE
+      alunos (matricula INTEGER PRIMARY KEY AUTOINCREMENT, nome TEXT, cpf
+      INTEGER UNIQUE, responsável TEXT). Ao rodarmos o comando é gerada uma
+      tabela com os campos em branco, fazemos o mesmo para a tabela professores.
+      CREATE TABLE professores (id_professor INTEGER PRIMARY KEY AUTOINCREMENT,
+      nome TEXT, cpf INTEGER UNIQUE, materia TEXT). E criamos também a tabela de
+      relação chamada aulas: CREATE TABLE aulas (id_professor INTEGER, matricula
+      INTEGER, FOREIGN KEY (id_professor) REFERENCES professores(id_professor),
+      FOREIGN KEY (matricula) REFERENCES alunos(matricula)). Os comando de
+      criação não retornam resultados, somente criam as tabelas.
+    </p>
+
+    <h2>ALTER TABLE</h2>
+    <p>
+      Podemos usar este comando para alterarmos nome da tabela, nome de campos
+      usando o seguinte comando: ALTER TABLE aulas RENAME COLUMN id_aluno TO
+      matricula_aluno.
+    </p>
+
+    <h2>DROP TABLE</h2>
+    <p>
+      Este comando serve para excluirmos uma tabela, por exemplo: DROP TABLE
+      alunos, fazendo todo o registro e a tabela deixar de existir por completo.
+    </p>
+  </body>
+</html>

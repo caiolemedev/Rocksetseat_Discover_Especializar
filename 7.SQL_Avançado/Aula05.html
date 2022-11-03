@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Especializar 7.5 - SQL Avançado</title>
+  </head>
+  <body>
+    <h1>Especializar 7.5 - SQL Avançado - Unindo Tabelas</h1>
+
+    <h2>JOIN</h2>
+    <p>
+      Baixamos o arquivo unindo_tabelas.sqlite com duas tabelas departamento e
+      funcionários. Cada tabela terá sua primary key e na tabela funcionários
+      temos a foreign key indicando o número do departamento. Abrindo o comando
+      do SQL podemos fazer um SELECT * FROM funcionarios JOIN departamentos ON
+      departamentos.id_dept = funcionarios.id_departamento. Assim o JOIN irá
+      realizar uma união das tabelas fazendo a relação estabelecida após o
+      comando ON, organizadas por funcionarios.
+    </p>
+
+    <h2>JOIN com WHERE</h2>
+    <p>
+      Podemos adicionar ao comando anterior o comando WHERE
+      funcionarios.id_departamento = 2 ou WHERE departamento.id_dept = 2 fazendo
+      a tabela trazer apenas funcionarios do departamento de ti (que possui id
+      2).
+    </p>
+
+    <h2>JOIN especificando campos</h2>
+    <p>
+      Podemos remover algumas informações das tabelas que não são interessantes
+      para nós na hora de apresentar os dados. Assim, no primeiro JOIN podemos
+      adicionar após o SELECT e antes do JOIN, no lugar do *, os campos
+      referenciando as tabelas, por exemplo: funcionarios.nome, funcionarios.cpf
+      e departamentos.descricao.
+    </p>
+
+    <h2>Alias</h2>
+    <p>
+      Usamos o mesmo comando do SELECT anterios, com os filtros aplicados
+      podemos atribuir alias ou apelidos para as tabelas, basta adicionarmos
+      FROM funcionarios as func e JOIN departamentos as dept, assim no SELECT
+      podemos reduzir e escrever func.nome. Podemos além disso no SELECT
+      utilizar o alias para alterar o campo na tabela como func.nome as Nome,
+      fazendo a primeira letra maiúscula. Isso só funciona dentro do SELECT e
+      não irá alterar nenhuma informação na tabela original, somente na
+      visualização.
+    </p>
+
+    <h2>LEFT OUTER JOIN</h2>
+    <p>
+      Temos departamentos na tabela que não possui nenhum funcionário e temos um
+      funcionário que não possui departamento. Nas queries que fizemos
+      anteriormente estas informações não apareceram pois não possuem um
+      relacionamento. Para trazermos todos os funcionários, mesmo que não tenha
+      departamento ou relacionamento podemos adicionar LEFT OUTER JOIN em vez de
+      só JOIN, a query trará todo o conteúdo mas indicará NULL para os campos
+      sem informação. Para mostrarmos todos os departamentos precisamos inverter
+      o lugar das tabelas fazendo SELECT * FROM departamentos LEFT OUTER JOIN
+      funcionarios ON departamentos.id_dept = funcionarios.id_departamento (não
+      precisamos alterar o ON).
+    </p>
+  </body>
+</html>

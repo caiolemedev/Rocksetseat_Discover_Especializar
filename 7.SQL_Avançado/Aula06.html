@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Especializar 7.6 - SQL Avançado</title>
+  </head>
+  <body>
+    <h1>Especializar 7.6 - SQL Avançado - Comandos Avançados</h1>
+
+    <h2>ORDER BY</h2>
+    <p>
+      Podemos adicionar o comando acima para organizarmos as informações da
+      tabela. Usamos assim: SELECT * FROM aluno ORDER BY aluno, ordenando em
+      ordem alfabética pelo aluno. Podemos usar o mesmo comando para qualquer
+      tabela e campo. Ao adicionarmos DESC no final do comando a query irá
+      organizar em ordem decrescente.
+    </p>
+
+    <h2>LIMT</h2>
+    <p>
+      O comando acima limita o número de resultados da query. Assim, podemos
+      colocar SELECT * FROM aluno LIMIT 1 e a query trará o primeiro resultado
+      que ele encontrar.
+    </p>
+
+    <h2>OFFSET</h2>
+    <p>
+      Usamos o comando acima para ignorar registros, por exemplo no comando:
+      SELECT * FROM funcionarios LIMIT 4 OFFSET 2 a query irá ignorar os 2
+      primeiros resultados e irá apresentar os próximos quatro resultados.
+    </p>
+
+    <h2>COUNT</h2>
+    <p>
+      Este comando informará quantos campos estão preenchidos na tabela, não
+      conta valores vazios (NULL). Usamos o comando: SELECT COUNT(nome) FROM
+      funcionarios.
+    </p>
+
+    <h2>GROUP BY</h2>
+    <p>
+      Podemos usar esse comando para agruparmos funcionários por departamentos
+      por exemplo, contando quantos departamentos diferentes temos. Usamos o
+      comando: SELECT id_departamento, COUNT(id_departamento) FROM funcionarios
+      GROUP BY id_departamento. Assim ele apresenta quantas vezes a query
+      encontrou aquele departamento na tabela de funcionarios.
+    </p>
+
+    <h2>JOIN, GROUP BY e COUNT juntos</h2>
+    <p>
+      Podemos usar todos os comando juntos para mostrar os nomes do departamento
+      e quantos funcionarios existem em cada um. Exemplo: SELECT
+      departamentos.descricao, COUNT(funcionarios.id_departamento) FROM
+      funcionarios JOIN departamentos ON funcionarios.id_departamentos =
+      departamentos.id_dept GROUP BY departamentos.id_dept.
+    </p>
+
+    <h2>HAVING</h2>
+    <p>
+      O WHERE não funciona com campos agrupados, assim podemos adicionar a query
+      anterior a linha HAVING count(funcionarios.id_departamento) >=2 para a
+      query trazer somente os resultados acima de 2 funcionarios. Podemos usar
+      qualquer um dos operadores lógicos.
+    </p>
+  </body>
+</html>
